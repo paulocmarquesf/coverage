@@ -58,7 +58,7 @@ plt <- tibble(x = seq_along(coverage), y = coverage) %>%
         scale_y_continuous(limits = c(0, 1), expand = c(0.025, 0.025)) +
         labs(x = "Replication", y = "Future coverage") +
         theme(axis.title.y = element_text(vjust = 2.5),
-          axis.title.x = element_text(vjust = -0.75))
+              axis.title.x = element_text(vjust = -0.75))
 
 fd <- 2 * IQR(coverage) / length(coverage)^(1/3) # Freedman-Diaconis rule
 
