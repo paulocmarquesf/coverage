@@ -77,5 +77,4 @@ g <- function(n, alpha, eps, gamma) {
     abs(pbeta(1 - alpha + eps, b, g) - pbeta(1 - alpha - eps, b, g) - gamma)
 }
 
-(calibration_size <- ceiling(optimize(function(n) g(n, nominal_alpha, eps, gamma),
-                                      lower = 10, upper = 10^4)$minimum))
+(calibration_size <- ceiling(optimize(function(n) g(n, nominal_alpha, eps, gamma), lower = 10, upper = 10^4)$minimum))
