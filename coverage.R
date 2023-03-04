@@ -46,21 +46,21 @@ min(coverage)
 
 ###
 
-fd <- 2 * IQR(coverage) / length(coverage)^(1/3) # Freedman-Diaconis rule
-
 theme_set(theme_bw())
 
 plt <- tibble(x = seq_along(coverage), y = coverage) %>%
     ggplot(aes(x, y)) +
-    geom_point(size = 0.5, alpha = 0.25) +
-    geom_hline(yintercept = 1 - alpha, size = 0.95, linetype = "dashed", alpha = 0.85) +
-    geom_hline(yintercept = 1 - alpha + 1 / (n + 1), size = 0.95, linetype = "dashed", alpha = 0.85) +
-    scale_x_continuous(limits = c(1, N), breaks = c(1, 2500, 5000, 7500, 10000), expand = c(0.015, 0.015),
-                       labels = scales::comma_format(big.mark = " ")) +
-    scale_y_continuous(limits = c(0, 1), expand = c(0.025, 0.025)) +
-    labs(x = "Replication", y = "Future coverage") +
-    theme(axis.title.y = element_text(vjust = 2.5),
+        geom_point(size = 0.5, alpha = 0.25) +
+        geom_hline(yintercept = 1 - alpha, size = 0.95, linetype = "dashed", alpha = 0.85) +
+        geom_hline(yintercept = 1 - alpha + 1 / (n + 1), size = 0.95, linetype = "dashed", alpha = 0.85) +
+        scale_x_continuous(limits = c(1, N), breaks = c(1, 2500, 5000, 7500, 10000), expand = c(0.015, 0.015),
+                           labels = scales::comma_format(big.mark = " ")) +
+        scale_y_continuous(limits = c(0, 1), expand = c(0.025, 0.025)) +
+        labs(x = "Replication", y = "Future coverage") +
+        theme(axis.title.y = element_text(vjust = 2.5),
           axis.title.x = element_text(vjust = -0.75))
+
+fd <- 2 * IQR(coverage) / length(coverage)^(1/3) # Freedman-Diaconis rule
 
 ggMarginal(plt, type = "histogram", margins = "y", size = 15,
            yparams = list(binwidth = fd, fill = "light gray"))
