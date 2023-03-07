@@ -1,8 +1,6 @@
 # On the Universal distribution of the coverage in split conformal prediction
-
 # Paulo C. Marques F. <PauloCMF1@insper.edu.br>
-
-# Paper: https://bit.ly/3muCZJC
+# https://arxiv.org/abs/2303.02770
 
 library(tidyverse)
 library(ggExtra)

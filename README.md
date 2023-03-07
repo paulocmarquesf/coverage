@@ -1,7 +1,7 @@
 # coverage
 
-On the universal distribution of the coverage in split conformal prediction.
+On the universal distribution of the coverage in split conformal prediction
 
 > Paulo C. Marques F.
 
-Paper: https://bit.ly/3muCZJC
+https://arxiv.org/abs/2303.02770
