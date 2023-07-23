@@ -6,4 +6,4 @@ On the universal distribution of the coverage in split conformal prediction
 
 https://arxiv.org/abs/2303.02770
 
-!(Polya.png)
+![](Polya.png)
