@@ -43,7 +43,8 @@ print(Sys.time() - begin)
 
 round(c(1 - alpha, 1 - alpha + 1 / (n  + 1)), 3) # MVP
 
-min(coverage)
+summary(coverage)
+
 which.min(coverage)
 
 hist(coverage, prob = TRUE, breaks = "FD",
