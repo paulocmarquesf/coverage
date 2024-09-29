@@ -6,7 +6,7 @@ begin <- Sys.time()
 
 calibration_size <- function(epsilon, tau, alpha) {
     # minimum n_0 such that the pair (n_0, alpha) is feasible
-    n_0 <- ceiling((1 - alpha) / alpha) # <=> ( ceiling((1 - alpha)*(n_0 + 1)) <= n_0 )
+    n_0 <- ceiling((1 - alpha) / alpha) #  <=>  ceiling((1 - alpha)*(n_0 + 1)) <= n_0
     repeat { # simple linear search; R is fast enough
         b <- ceiling((1 - alpha)*(n_0 + 1))
         g <- floor(alpha*(n_0 + 1))
