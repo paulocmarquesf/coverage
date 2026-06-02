@@ -8,7 +8,7 @@
 @article{marquesf2025,
   title = {Universal distribution of the empirical coverage in split conformal prediction},
   author = {Paulo C. {Marques F.}},
-  journal = {Statistics & Probability Letters},
+  journal = {Statistics \& Probability Letters},
   volume = {219},
   pages = {110350},
   year = {2025},
