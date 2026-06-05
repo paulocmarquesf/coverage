@@ -1,5 +1,5 @@
 ```bibtex
-@article{marques2025,
+@article{marquesf2025,
   title = {Universal distribution of the empirical coverage in split conformal prediction},
   author = {Paulo C. {Marques F.}},
   journal = {Statistics \& Probability Letters},
